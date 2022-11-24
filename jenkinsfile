@@ -5,6 +5,7 @@ pipeline {
         stage('checkout') {
             steps {
                 echo 'Building..'
+                git 'https://github.com/suryatejakatragadda/mydata.git'
             }
         }
         stage('build') {
